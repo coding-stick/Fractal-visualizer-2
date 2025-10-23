@@ -89,32 +89,32 @@ while running:
         if parameterized != var:
             if keys[key[0]]:
                 if var == "c":
-                    c_var += complex(0, 0.1)
-                elif var == "z":
-                    z_var += complex(0, 0.1)
-                else:
-                    x_var += complex(0, 0.1)
-            elif keys[key[1]]:
-                if var == "c":
-                    c_var -= complex(0, 0.1)
-                elif var == "z":
-                    z_var -= complex(0, 0.1)
-                else:
-                    x_var -= complex(0, 0.1)
-            elif keys[key[2]]:
-                if var == "c":
                     c_var += complex(0.1, 0)
                 elif var == "z":
                     z_var += complex(0.1, 0)
                 else:
                     x_var += complex(0.1, 0)
-            elif keys[key[3]]:
+            elif keys[key[1]]:
                 if var == "c":
                     c_var -= complex(0.1, 0)
                 elif var == "z":
                     z_var -= complex(0.1, 0)
                 else:
                     x_var -= complex(0.1, 0)
+            elif keys[key[2]]:
+                if var == "c":
+                    c_var += complex(0, 0.1)
+                elif var == "z":
+                    z_var += complex(0, 0.1)
+                else:
+                    x_var += complex(0, 0.1)
+            elif keys[key[3]]:
+                if var == "c":
+                    c_var -= complex(0, 0.1)
+                elif var == "z":
+                    z_var -= complex(0, 0.1)
+                else:
+                    x_var -= complex(0, 0.1)
 
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
